@@ -1,0 +1,48 @@
+.booking-details{
+
+    text-align: start;
+    
+}
+
+.booking-details img{
+    width: 100%;
+}
+
+.my-order{
+    margin: 20px;
+    display: flex;
+    color: white;
+    background-color: black;
+    
+}
+
+.my-order-form{
+   margin-top: 50px;
+}
+.my-order-form form{
+    margin-top: 130px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+.my-order-form form h2{
+   
+color: gray;
+font-size: medium;
+margin-top: 10px;
+}
+
+.my-order-form form input{
+    
+    
+    margin: 15px;
+    padding: 5px;
+  
+}

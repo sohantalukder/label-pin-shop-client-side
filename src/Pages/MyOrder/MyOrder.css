@@ -1,0 +1,26 @@
+.order-details img{
+    width: 100%;
+    }
+    
+    .order-details{
+       width: 100%;
+    
+        color: rgb(181, 173, 173);
+       display: flex;  
+       justify-content: center;
+       align-items: center;
+        
+    }
+    
+    .card{
+        width: 300px;
+        height: 360px;
+        text-align: start;
+    }
+    
+    .delete-btn{
+        width: 30%;
+      margin-top: 10px;
+    }
+    
+    
