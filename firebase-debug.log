@@ -1,0 +1,51 @@
+[debug] [2021-11-16T03:06:26.019Z] ----------------------------------------------------------------------
+[debug] [2021-11-16T03:06:26.020Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Sohan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-11-16T03:06:26.021Z] CLI Version:   9.21.0
+[debug] [2021-11-16T03:06:26.021Z] Platform:      win32
+[debug] [2021-11-16T03:06:26.021Z] Node Version:  v14.17.1
+[debug] [2021-11-16T03:06:26.022Z] Time:          Tue Nov 16 2021 09:06:26 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-11-16T03:06:26.022Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-11-16T03:06:26.069Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-16T03:06:26.070Z] > authorizing via signed-in user (sohan.designer1@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Sohan\OneDrive\Desktop\Lapel-pin-shop-Client-main
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using lapel-pin-shop. 
+[debug] [2021-11-16T03:06:43.311Z] > refreshing access token with scopes: []
+[debug] [2021-11-16T03:06:43.312Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-16T03:06:43.589Z] <<< HTTP RESPONSE 200 {"date":"Tue, 16 Nov 2021 03:06:46 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-16T03:06:43.691Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/lapel-pin-shop [none]
+[debug] [2021-11-16T03:06:44.291Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/lapel-pin-shop 403
+[debug] [2021-11-16T03:06:44.291Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/lapel-pin-shop {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-11-16T03:06:44.291Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-11-16T03:06:44.549Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\Sohan\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\Sohan\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:240:23)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Client.request (C:\Users\Sohan\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\Sohan\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\Sohan\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\Sohan\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project lapel-pin-shop. Please make sure the project exists and your account has permission to access it.
